@@ -45,7 +45,10 @@ export default function MakeNewPost() {
 
         <div className="space-y-2">
           <h2 className={`text-xl font-semibold mt-8 mb-4${textColors.primary}`}>Live Preview</h2>
-          <div className={`border rounded-lg p-4 min-h-[200px] ${bgColors.primary} ${borderColors.default}`}>
+          
+        {/* ${borderColors.default} */}
+          <div className={`border rounded-lg p-4 min-h-[200px] ${bgColors.primary} 
+           border-transparent`}>
             <MarkdownRenderer 
                 content={markdown} 
                 contentAlignment="left"

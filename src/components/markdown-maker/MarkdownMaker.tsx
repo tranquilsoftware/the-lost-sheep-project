@@ -4,6 +4,7 @@
 import { useState, useRef, ChangeEvent } from "react"
 import { Bold, Italic, Heading1, Heading2, Heading3, List, ListOrdered, Link, Image, Code, Quote } from "lucide-react"
 import { bgColors, borderColors, textColors } from "../../styles/colors"
+import { CODE_LANGUAGES } from "./types"
 
 interface MarkdownMakerProps {
   markdown: string
@@ -86,7 +87,7 @@ export default function MarkdownMaker({ markdown, onChange }: MarkdownMakerProps
   }
 
   return (
-    <div className={`${borderColors.default} rounded-lg overflow-hidden ${bgColors.primary} shadow-sm`}>
+    <div className={`${borderColors.default} ${bgColors.primary} rounded-lg overflow-hidden shadow-sm`}>
       <div className={`flex flex-wrap gap-1 p-2 ${borderColors.default} ${bgColors.secondary}`}>
         <ToolbarButton icon={<Bold size={18} />} onClick={() => handleToolbarAction("bold")} tooltip="Bold" />
         <ToolbarButton icon={<Italic size={18} />} onClick={() => handleToolbarAction("italic")} tooltip="Italic" />
@@ -108,27 +109,11 @@ export default function MarkdownMaker({ markdown, onChange }: MarkdownMakerProps
             onChange={handleLanguageChange}
             className={`ml-1 text-sm ${bgColors.primary} ${borderColors.default} rounded px-1 py-0.5 ${textColors.primary}`}
           >
-            <option value="javascript">JavaScript</option>
-            <option value="jsx">JSX</option>
-            <option value="typescript">TypeScript</option>
-            <option value="tsx">TSX</option>
-            <option value="css">CSS</option>
-            <option value="html">HTML</option>
-            <option value="python">Python</option>
-            <option value="java">Java</option>
-            <option value="c">C</option>
-            <option value="cpp">C++</option>
-            <option value="csharp">C#</option>
-            <option value="php">PHP</option>
-            <option value="ruby">Ruby</option>
-            <option value="go">Go</option>
-            <option value="rust">Rust</option>
-            <option value="swift">Swift</option>
-            <option value="bash">Bash</option>
-            <option value="sql">SQL</option>
-            <option value="json">JSON</option>
-            <option value="yaml">YAML</option>
-            <option value="markdown">Markdown</option>
+            {CODE_LANGUAGES.map((lang) => (
+              <option key={lang.value} value={lang.value}>
+                {lang.label}
+              </option>
+            ))}
           </select>
         </div>
         <ToolbarButton icon={<Quote size={18} />} onClick={() => handleToolbarAction("quote")} tooltip="Blockquote" />
