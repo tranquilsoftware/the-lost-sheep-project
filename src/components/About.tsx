@@ -15,7 +15,7 @@ const About = () => {
                   <img 
                     // src="/logo_no_bg.png"
                     src={LOGO}
-                    alt="Tranquil Software Logo"
+                    alt="The Lost Sheep Logo"
                     className="w-full h-full object-cover"
                   />
                 </div>
