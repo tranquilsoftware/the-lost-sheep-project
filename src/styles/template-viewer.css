@@ -1,0 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .template-gradient {
+      background-image: radial-gradient(var(--tw-gradient-stops));
+      --tw-gradient-from: rgb(var(--template-primary) / 0.1);
+      --tw-gradient-via: rgb(var(--template-accent) / 0.1);
+      --tw-gradient-to: transparent;
+    }
+  
+    .template-card {
+      @apply bg-template-background text-template-primary;
+    }
+}
