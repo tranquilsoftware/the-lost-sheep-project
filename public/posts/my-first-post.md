@@ -27,6 +27,27 @@ int main() {
     return 0;
 }
 ```
+
+
+## Sample Data Table
+
+Here's an example of a markdown table:
+
+| Feature | Description | Status |
+|---------|-------------|--------|
+| Dark Mode | Toggle between light and dark themes | ✅ Implemented |
+| Code Blocks | Syntax highlighting for code snippets | ✅ Implemented |
+| Tables | Display tabular data | ✅ Implemented |
+| Images | Support for embedded images | ⏳ Coming Soon |
+| Comments | User comments section | ⏳ Coming Soon |
+
+### Table Features
+
+- **Responsive**: Adapts to different screen sizes
+- **Sortable**: Click on column headers to sort
+- **Accessible**: Properly structured for screen readers
+- **Styling**: Consistent with your site's theme
+
 ## Heading 2
 
 shivers

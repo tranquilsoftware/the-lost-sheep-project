@@ -1,6 +1,7 @@
 import { Button } from "../components/ui/Button"
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { BRAND_NAME, BRAND_ELEVATOR_PITCH } from "../globals"
 
 export default function Hero() {
   const navigate = useNavigate()
@@ -21,39 +22,22 @@ export default function Hero() {
       >
         <div className="mx-auto max-w-4xl text-center">
           <motion.h1 
-            className="mb-6 text-4xl font-bold md:text-6xl gradient-text"
+            className="mb-6 text-4xl font-bold md:text-6xl text-primary"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            Tasmanian Web Design & Development
-            {/* Get All Over The Web Like A Tuuarantula */}
+            {BRAND_NAME}
           </motion.h1>
 
-          
-
-          {/* <motion.p 
-            className="mb-8 text-xl text-content-white "
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-          >
-            Stand out with a custom design
-          </motion.p>
-           */}
-
-
-
-          <motion.p 
+          <motion.h2 
             className="mb-8 text-xl text-white"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
           >
-            {/* Developing premium websites and custom software solutions for businesses across Tasmania and Australia */}
-            {/* Ongoing support and one-off solutions */}
-            Stand out with a eye-catching custom design
-          </motion.p>
+            {BRAND_ELEVATOR_PITCH}
+          </motion.h2>
 
 
           <motion.div 
@@ -63,23 +47,6 @@ export default function Hero() {
             transition={{ duration: 2, delay: 5 }}
           >
 
-            {/* View Work Button */}
-            <Button
-              className="bg-gradient-to-r from-primary-light to-accent hover:from-primary hover:to-accent-dark text-white"
-              onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              View Work
-            </Button>
-
-
-            {/* Build your Quote Button */}
-            <Button
-              variant="outline"
-              className="border-border bg-white/5 text-white hover:bg-white/10"
-              onClick={() => navigate('/quote-builder')}
-            >
-              Build your Quote
-            </Button>
           </motion.div>
         </div>
       </motion.div>

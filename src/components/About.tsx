@@ -22,20 +22,11 @@ const About = () => {
               </div>
             </div>
             <div className="md:w-1/2 md:pl-12 relative z-10">
-              <h2 className="text-3xl font-bold mb-6 gradient-text">About {BRAND_NAME}</h2>
+              <h2 className="text-3xl font-bold mb-6 gradient-text">About</h2>
               <div className="space-y-4">
                
                 <p className="text-content-secondary">
-                  At {BRAND_NAME}, we're not just web designers
-                  - we're your local technical experts and consultants for all things tech-related.
-                  Our passion lies in delivering custom creative solutions personalised to your business needs.
-                </p>
-
-                {/* <p className="text-content-secondary"> */}
-                  {/* Our values are simple: we create beautiful software that your business and customers will love to use. We believe in building intuitive applications that showcase your vision perfectly. After all, seeing is believing, and we're passionate about creating amazing software that helps your business grow.                </p> */}
-               
-                <p className="text-content-secondary">
-                  Whether you're looking to startup or an established brand, we're here to be your personal technology partner. Let us help you scale in the digital world!
+                  {BRAND_NAME}, by proving Christ's through evidence, Jesus will bring peace and love to your heart.
                 </p>
 
               </div>
