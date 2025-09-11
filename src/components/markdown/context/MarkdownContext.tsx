@@ -1,4 +1,4 @@
-import React, { createContext, useContext, ReactNode } from 'react';
+import React, { createContext, useContext, ReactNode, useState, useEffect } from 'react';
 
 type Alignment = 'left' | 'center' | 'right';
 
@@ -10,6 +10,7 @@ interface MarkdownContextType {
   setActiveId: (id: string | null) => void;
   headings: Array<{ id: string; text: string; level: number }>;
   registerHeading: (id: string, text: string, level: number) => void;
+  hasEnoughSpaceForToc: boolean;
 }
 
 const MarkdownContext = createContext<MarkdownContextType | undefined>(undefined);
@@ -36,6 +37,7 @@ export const MarkdownProvider: React.FC<MarkdownProviderProps> = ({
     level: number;
     order: number;
   }>>([]);
+  const [hasEnoughSpaceForToc, setHasEnoughSpaceForToc] = React.useState(false);
 
   const registerHeading = React.useCallback((id: string, text: string, level: number) => {
     setHeadings(prev => {
@@ -55,6 +57,16 @@ export const MarkdownProvider: React.FC<MarkdownProviderProps> = ({
     });
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setHasEnoughSpaceForToc(window.innerWidth > 1440);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    console.log('hasEnoughSpaceForToc', hasEnoughSpaceForToc);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const value = React.useMemo(() => ({
     contentAlignment,
@@ -64,7 +76,8 @@ export const MarkdownProvider: React.FC<MarkdownProviderProps> = ({
     setActiveId,
     headings,
     registerHeading,
-  }), [contentAlignment, headingAlignment, showToc, activeId, headings, registerHeading]);
+    hasEnoughSpaceForToc,
+  }), [contentAlignment, headingAlignment, showToc, activeId, headings, registerHeading, hasEnoughSpaceForToc]);
 
   return (
     <MarkdownContext.Provider value={value}>

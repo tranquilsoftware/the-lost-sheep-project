@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
-import { MarkdownProvider } from './context/MarkdownContext';
+import { MarkdownProvider, useMarkdown } from './context/MarkdownContext';
 import Headings from './components/Headings';
 import Text from './components/Text';
 import Lists from './components/Lists';
@@ -42,6 +42,31 @@ const MarkdownContent: React.FC<{ content: string; className?: string }> = ({ co
   );
 };
 
+const MarkdownContentWrapper: React.FC<{ content: string; className?: string; showToc?: boolean }> = ({ content, className, showToc }) => {
+  const { hasEnoughSpaceForToc } = useMarkdown();
+  const shouldShowToc = showToc && hasEnoughSpaceForToc;
+
+  console.log('shouldShowToc 2', shouldShowToc);
+  console.log('hasEnoughSpaceForToc 2', hasEnoughSpaceForToc);
+
+  return (
+    <div className="relative w-full">
+      <div className="max-w-4xl mx-auto px-4 relative">
+        {shouldShowToc && (
+          <div className="hidden lg:block absolute right-full pr-8 w-64 top-0 h-full">
+            <div className="sticky top-24">
+              <TableOfContents />
+            </div>
+          </div>
+        )}
+        <div className="w-full">
+          <MarkdownContent content={content} className={className} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   content,
   className = '',
@@ -55,20 +80,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
       headingAlignment={headingAlignment}
       showToc={showToc}
     >
-      <div className="relative w-full">
-        <div className="max-w-4xl mx-auto px-4 relative">
-          {showToc && (
-            <div className="hidden lg:block absolute right-full pr-8 w-64 top-0 h-full">
-              <div className="sticky top-24">
-                <TableOfContents />
-              </div>
-            </div>
-          )}
-          <div className="w-full">
-            <MarkdownContent content={content} className={className} />
-          </div>
-        </div>
-      </div>
+      <MarkdownContentWrapper content={content} className={className} showToc={showToc} />
     </MarkdownProvider>
   );
 };

@@ -22,12 +22,12 @@ export default function CodeBlock() {
       return !inline ? ( 
         <div className={cn('my-4 rounded-lg overflow-hidden', bgColors.dark)}>
           {language && (
-            <div className={cn('px-4 py-1 text-sm font-mono text-left', bgColors.dark, textColors.light)}>
+            <div className={cn('px-4 py-1 text-sm font-mono text-left text-center', bgColors.dark, textColors.light)}>
               {language}
             </div>
           )}
           <pre className={cn('p-4 overflow-x-auto text-left', bgColors.dark, textColors.light)}>
-            <code className={`language-${language}`} {...props}>
+            <code className={`no-scrollbar language-${language}`} {...props}>
               {children}
             </code>
           </pre>

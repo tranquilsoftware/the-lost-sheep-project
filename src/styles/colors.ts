@@ -19,7 +19,7 @@ export const bgColors = {
   accent: 'bg-accent dark:bg-accent-dark',
   muted: 'bg-gray-100 dark:bg-gray-700',
   light: 'bg-gray-50 dark:bg-gray-800',
-  dark: 'bg-gray-800 dark:bg-gray-700',
+  dark: 'bg-gray-900 dark:bg-gray-800',
   error: 'bg-red-50 dark:bg-red-900/20',
   success: 'bg-green-50 dark:bg-green-900/20',
   warning: 'bg-yellow-50 dark:bg-yellow-900/20',

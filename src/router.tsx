@@ -5,6 +5,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import BlogPage from './pages/blog/BlogPage';
 import BlogPostPage from './pages/blog/posts/[slug]'
 import MakeNewPost from './pages/blog/make-new-post';
+import AnimationScrollPage from './components/animations/WholePageScrollAnimation';
 
 export const router = createBrowserRouter([
 
@@ -27,5 +28,9 @@ export const router = createBrowserRouter([
   {
     path: '*',
     element: <App />,
-  }
+  },
+  {
+    path: '/scroll',
+    element: <AnimationScrollPage />,
+  },
 ]);

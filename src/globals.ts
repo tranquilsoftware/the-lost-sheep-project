@@ -14,3 +14,12 @@ export const HREF_HOME_LINK = '/';
 
 /// STYLING
 export const DARK_MODE_PREFERENCE_KEY = 'theme-preference';
+
+
+/// VIDEOS
+export const VIDEO_0 = '/assets/video/section0.mp4'; // https://www.pexels.com/video/a-man-walking-inside-an-abandoned-building-8720441/
+export const VIDEO_1 = '/assets/video/section1.mp4'; // https://www.pexels.com/video/the-footage-of-a-dome-inside-st-peter-s-basilica-8395224/
+export const VIDEO_2 = '/assets/video/section2.mp4'; // https://www.pexels.com/video/stunning-vatican-dome-with-frescoes-29236515/
+export const VIDEO_3 = '/assets/video/section3.mp4'; // https://www.pexels.com/video/a-woman-kissing-a-religious-icon-in-a-church-10610675/
+export const VIDEO_4 = '/assets/video/section4.mp4'; // https://www.pexels.com/video/time-lapse-video-of-landscape-scenery-of-an-agricultural-land-during-sunrise-5630998/
+export const VIDEO_5 = '/assets/video/section5.mp4'; // https://www.pexels.com/video/dramatic-cloudscape-over-tranquil-ocean-33006775/

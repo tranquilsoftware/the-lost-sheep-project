@@ -1,5 +1,5 @@
 import React from 'react';
-import { borderColors, cn } from '../../../styles/colors';
+import { bgColors, borderColors, cn, textColors } from '../../../styles/colors';
 
 export default function Table() {
   return {
@@ -24,7 +24,8 @@ export default function Table() {
       <th 
         className={cn(
           'border px-4 py-2 text-left',
-          borderColors.default,
+          // borderColors.default,
+          bgColors.primary, borderColors.default, textColors.primary,
           'bg-gray-100 dark:bg-gray-800'
         )} 
         {...props} 
@@ -32,7 +33,11 @@ export default function Table() {
     ),
     td: (props: React.TdHTMLAttributes<HTMLTableCellElement>) => (
       <td 
-        className={cn('border px-4 py-2', borderColors.default)} 
+        className={cn('border px-4 py-2', 
+          // borderColors.default,
+          bgColors.primary, borderColors.default, textColors.primary,
+          'bg-gray-100 dark:bg-gray-800'
+        )} 
         {...props} 
       />
     ),

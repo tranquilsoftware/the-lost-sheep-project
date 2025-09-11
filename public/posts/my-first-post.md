@@ -71,3 +71,18 @@ shivers
 ## Reset Heading 1
 
 asdfsdf
+
+
+## Sample Image
+
+Here's an example of an embedded image with a caption:
+
+![A beautiful landscape placeholder image](https://i.imgur.com/CdnTZ20.png)
+
+<!-- 
+## Sample YT Vid
+
+Here's how to embed a YouTube video in markdown:
+
+<youtube id="dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up" />
+ -->
