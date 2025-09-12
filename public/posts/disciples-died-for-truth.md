@@ -6,7 +6,7 @@ publishedDate: "2024-01-17"
 modifiedDate: "2024-01-17"
 readTime: "8 min read"
 category: "Apologetics"
-tags: ["Disciples", "Martyrdom", "Evidence", "Resurrection", "Peter"]
+tags: ["Disciples", "Martyrdom", "Evidence", "Resurrection", "Peter", "Christian Apologetics", "Biblical Evidence", "Historical Verification", "Psychological Arguments", "Early Church Tradition", "Acts 12:2", "Matthew 27:3-5", "Simon Peter", "James the Greater", "Judas Iscariot", "Christian Persecution", "Eyewitness Testimony", "Resurrection Proof", "Biblical Inerrancy", "Faith and Reason"]
 image: "/assets/blog/disciples-martyrdom.jpg"
 featured: true
 draft: false
@@ -22,7 +22,7 @@ Yet every single one of Jesus' original disciples (except John, who died in exil
 
 Think about this carefully: These men knew whether the resurrection was true or false. They were eyewitnesses. If they had stolen the body (as critics claim), or if Jesus had not truly risen from the dead, they would have known it. They would have been living a lie.
 
-**But people don't willingly die for a lie they know is false.**
+**People don't willingly die for a lie.**
 
 ## The Martyrdom of St. Peter: "I Do Not Deserve to Be Crucified Like My Lord"
 
@@ -46,6 +46,7 @@ Think about the significance of this moment:
 - **Death**: Crucified upside down in Rome (c. 64-67 AD)
 - **Significance**: Requested to be crucified upside down, feeling unworthy to die like Jesus
 - **Historical Source**: Early church tradition, Clement of Rome, Tertullian
+- **Biblical Record**: No biblical record of Peter's death, but Jesus prophesied his martyrdom in John 21:18-19
 
 ### Andrew (Peter's Brother)
 - **Death**: Crucified on an X-shaped cross in Greece
@@ -54,8 +55,9 @@ Think about the significance of this moment:
 
 ### James the Greater
 - **Death**: Beheaded by Herod Agrippa I (c. 44 AD)
-- **Significance**: First apostle to be martyred, as recorded in Acts 12:2
+- **Significance**: First apostle to be martyred
 - **Historical Source**: Biblical record, confirmed by Josephus
+- **Biblical Citation**: "About that time Herod the king laid violent hands on some who belonged to the church. And he killed James the brother of John with the sword." **Acts 12:1-2, ESV**
 
 ### John the Evangelist
 - **Death**: Died of natural causes in exile (c. 100 AD)
@@ -101,6 +103,12 @@ Think about the significance of this moment:
 - **Death**: Stoned and then beheaded in Jerusalem
 - **Significance**: Chosen to replace Judas, died faithful to the end
 - **Historical Source**: Early church tradition
+
+### Judas Iscariot
+- **Death**: Hanged himself
+- **Significance**: Betrayed Jesus for 30 pieces of silver
+- **Historical Source**: **Biblical record** - Matthew 27:3-5
+- **Biblical Citation**: "Then when Judas, his betrayer, saw that Jesus was condemned, he changed his mind and brought back the thirty pieces of silver to the chief priests and the elders, saying, 'I have sinned by betraying innocent blood.' And they said, 'What is that to us? See to it yourself.' And throwing down the pieces of silver into the temple, he departed, and he went and hanged himself." **Matthew 27:3-5, ESV**
 
 ## The Psychological Argument
 
@@ -162,6 +170,8 @@ Critics claim the disciples stole the body. But this makes no sense:
 1. **Roman Guard**: The tomb was guarded by Roman soldiers who faced death for failing their duty
 2. **Sealed Tomb**: The tomb was sealed with a Roman seal, punishable by death for breaking
 3. **Motivation**: Why would they steal the body and then die for a lie?
+
+> When the chief priests had met with the elders and devised a plan, they gave the soldiers a large sum of money, telling them, 'You are to say, "His disciples came during the night and stole him away while we were asleep." If this report gets to the governor, we will satisfy him and keep you out of trouble.' So the soldiers took the money and did as they were instructed. And this story has been widely circulated among the Jews to this very day. **Matthew 28:12-15 NIV**
 
 ### The Hallucination Theory
 

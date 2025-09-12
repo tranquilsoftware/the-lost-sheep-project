@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 import ThemeToggle from '../../../components/theme/ThemeToggle';
 import BlogPost from '../BlogPost';
 import { getBlogPostBySlug } from '../../../data/blogPosts';
-import { BRAND_NAME } from '../../../globals';
+import { BRAND_NAME, GLOBAL_META_TAGS } from '../../../globals';
 import SEO from '../../../components/SEO';
 import { PostMetadata, extractFilename, parseMarkdownWithFrontmatter } from '../../../context/markdownParser';
 
@@ -141,7 +141,7 @@ const BlogPostPage = () => {
   const seoDescription = metadata.description || post.excerpt;
   const seoImage = metadata.image || post.image;
   const seoAuthor = metadata.author || BRAND_NAME;
-  const seoTags = metadata.tags || [];
+  const seoTags = metadata.tags || GLOBAL_META_TAGS || [];
   const seoPublishedTime = metadata.publishedDate || post.date;
   const seoModifiedTime = metadata.modifiedDate || post.date;
 
@@ -156,7 +156,7 @@ const BlogPostPage = () => {
         publishedTime={seoPublishedTime}
         modifiedTime={seoModifiedTime}
         author={seoAuthor}
-        tags={seoTags}
+        tags={[...seoTags, ...GLOBAL_META_TAGS]}
       />
       
       <main className="container mx-auto px-4 py-12 max-w-4xl">
