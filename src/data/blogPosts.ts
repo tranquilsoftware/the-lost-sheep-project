@@ -39,6 +39,26 @@ export const blogPosts: BlogPost[] = [
     date: '2023-01-01',
     slug: 'common-misconceptions-of-the-bible',
     category: 'Historical Evidence',
+  },
+  {
+    id: '4',
+    title: 'No Evidence Has Ever Disproven the Bible or Jesus Christ',
+    excerpt: 'Examining the historical and archaeological evidence that confirms the Bible\'s accuracy and the reality of Jesus Christ.',
+    readTime: '10 min read',
+    date: '2024-01-16',
+    // image: '/assets/blog/bible-evidence.jpg',
+    slug: 'no-evidence-disproves-bible-jesus',
+    category: 'Apologetics',
+  },
+  {
+    id: '5',
+    title: 'No One Dies for a Lie: The Martyrdom of the Disciples',
+    excerpt: 'Examining how all of Jesus\' disciples died rather than deny that He was the Son of God - powerful evidence for the truth of the resurrection.',
+    readTime: '8 min read',
+    date: '2024-01-17',
+    // image: '/assets/blog/disciples-martyrdom.jpg',
+    slug: 'disciples-died-for-truth',
+    category: 'Apologetics',
   }
 ];
 
