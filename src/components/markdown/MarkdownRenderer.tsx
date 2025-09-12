@@ -12,6 +12,7 @@ import Table from './components/Table';
 import Media from './components/Media';
 import TableOfContents from './components/TableOfContents';
 import 'highlight.js/styles/github-dark.css';
+import ReadMeter from './components/ReadMeter';
 
 export interface MarkdownRendererProps {
   content: string;
@@ -51,6 +52,7 @@ const MarkdownContentWrapper: React.FC<{ content: string; className?: string; sh
 
   return (
     <div className="relative w-full">
+      <ReadMeter />
       <div className="max-w-4xl mx-auto px-4 relative">
         {shouldShowToc && (
           <div className="hidden lg:block absolute right-full pr-8 w-64 top-0 h-full">

@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
   {
     path: '/blog/:slug',
     element: <BlogPostPage />,
-    errorElement: <div>Blog post not found.</div>
+    // errorElement: <div>Blog post not found.</div>
   },
   {
     path: '*',

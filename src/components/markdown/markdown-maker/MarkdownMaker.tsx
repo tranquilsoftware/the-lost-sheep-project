@@ -3,7 +3,7 @@
 
 import { useState, useRef, ChangeEvent } from "react"
 import { Bold, Italic, Heading1, Heading2, Heading3, List, ListOrdered, Link, Image, Code, Quote } from "lucide-react"
-import { bgColors, borderColors, textColors } from "../../styles/colors"
+import { bgColors, borderColors, textColors } from "../../../styles/colors"
 import { CODE_LANGUAGES } from "./types"
 
 interface MarkdownMakerProps {

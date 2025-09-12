@@ -18,8 +18,7 @@ export default function Header() {
   const paddingY = isScrollingUp ? '1rem' : '0.75rem'; // Adjust padding for the height change
 
   const menuItems = [
-    // { name: 'Gallery', href: '#gallery' }, 
-    { name: 'Reserve', href: '#reserve' },
+    { name: 'Blog', href: '/blog' }, 
     { name: 'FAQ', href: '#faq' },
     { name: 'About', href: '/about' },
   ]

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, ReactNode, useState, useEffect } from 'react';
+import React, { createContext, useContext, ReactNode, useEffect } from 'react';
 
 type Alignment = 'left' | 'center' | 'right';
 
@@ -22,6 +22,8 @@ interface MarkdownProviderProps {
   showToc?: boolean;
 }
 
+
+// TODO magic number 1440, ew need ti more dynamic, having trouble rn
 export const MarkdownProvider: React.FC<MarkdownProviderProps> = ({
   children,
   contentAlignment = 'left',

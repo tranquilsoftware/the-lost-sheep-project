@@ -1,5 +1,6 @@
 import React from 'react';
 import { useMarkdown } from '../context/MarkdownContext';
+import { borderColors, textColors } from '../../../styles/colors';
 
 export default function Text() {
   const { contentAlignment } = useMarkdown();
@@ -15,13 +16,13 @@ export default function Text() {
   return {
     p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
       <p 
-        className={`mb-4 leading-relaxed text-gray-700 dark:text-gray-300 ${getAlignmentClass()}`} 
+        className={`mb-4 leading-relaxed ${textColors.primary} ${getAlignmentClass()}`} 
         {...props} 
       />
     ),
     a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
       <a 
-        className="text-indigo-600 dark:text-indigo-400 hover:underline"
+        className={textColors.a}
         target="_blank"
         rel="noopener noreferrer"
         {...props}
@@ -35,12 +36,12 @@ export default function Text() {
     ),
     blockquote: (props: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) => (
       <blockquote 
-        className={`border-l-4 border-indigo-500 pl-4 italic my-6 text-gray-600 dark:text-gray-400 ${getAlignmentClass()}`}
+        className={`border-l-4 border-indigo-500 pl-4 italic my-6 ${textColors.primary} ${getAlignmentClass()}`}
         {...props} 
       />
     ),
     hr: (props: React.HTMLAttributes<HTMLHRElement>) => (
-      <hr className="my-6 border-gray-300 dark:border-gray-700" {...props} />
+      <hr className={`${borderColors.horizontalline} my-6`} {...props} />
     ),
   };
 }

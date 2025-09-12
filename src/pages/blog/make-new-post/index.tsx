@@ -1,5 +1,5 @@
 import { useState } from "react"
-import MarkdownMaker from "../../../components/markdown-maker/MarkdownMaker"
+import MarkdownMaker from "../../../components/markdown/markdown-maker/MarkdownMaker"
 import MarkdownRenderer from "../../../components/markdown/MarkdownRenderer"
 import { MarkdownProvider } from "../../../components/markdown/context/MarkdownContext"
 import { Button } from "../../../components/ui/Button"

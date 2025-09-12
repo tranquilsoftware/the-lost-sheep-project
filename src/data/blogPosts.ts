@@ -4,7 +4,7 @@ export interface BlogPost {
   excerpt: string;
   readTime: string;
   date: string;
-  image: string;
+  image?: string;
   slug: string;
   category: string;
   tagline?: string;
@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'This is a sample blog post excerpt.',
     readTime: '5 min read',
     date: '2023-01-01',
-    image: 'https://via.placeholder.com/150',
+    // image: 'https://placeholder.co/150',
     slug: 'my-first-post',
     category: 'Technology',
     tagline: 'Exploring the future of technology'

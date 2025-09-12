@@ -52,6 +52,9 @@ Here's an example of a markdown table:
 
 shivers
 
+## A HREF Example
+This is a example of <a href="https://www.google.com">Google</a> underlining <--
+
 ### Heading 3
 
 shivers
@@ -86,3 +89,28 @@ Here's how to embed a YouTube video in markdown:
 
 <youtube id="dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up" />
  -->
+
+
+## Sample Image Gallery
+
+
+<imagegallery 
+  title="My Photo Collection" 
+  images='[
+    {
+      "src": "https://i.imgur.com/CdnTZ20.png",
+      "alt": "Beautiful landscape",
+      "caption": "A stunning view of nature"
+    },
+    {
+      "src": "https://i.imgur.com/CdnTZ20.png",
+      "alt": "City skyline",
+      "caption": "Urban architecture at night"
+    }
+  ]' 
+/>
+
+<!-- <imagegallery 
+  title="My Photo Collection" 
+  images='[{"src": "https://i.imgur.com/CdnTZ20.png", "alt": "Beautiful landscape", "caption": "A stunning view of nature"}, {"src": "https://i.imgur.com/CdnTZ20.png", "alt": "City skyline", "caption": "Urban architecture at night"}]'
+/> -->
