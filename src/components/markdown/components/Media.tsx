@@ -94,7 +94,7 @@ export default function Media() {
         fullWidth = false,
         centerThumbnails = false ,
         thumbnailOptions = {
-          width: 256  ,
+          width: 256,
           height: 256,
           borderRadius: 12,
           gap: 24

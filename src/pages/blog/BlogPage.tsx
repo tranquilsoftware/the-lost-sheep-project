@@ -1,8 +1,9 @@
 import { useState, useMemo } from 'react';
-import { getAllBlogPosts, categories, BlogPost } from '../../data/blogPosts';
+import { getAllBlogPosts, categories } from '../../data/blogPosts';
 import { WEBSITE_TITLE } from '../../globals';
 import ThemeToggle from '../../components/theme/ThemeToggle';
 import { BlogGrid } from '../../components/blog/BlogGrid';
+import { textColors } from '../../styles/colors';
 
 const BlogPage = () => {
   const allPosts = getAllBlogPosts();
@@ -26,8 +27,12 @@ const BlogPage = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-12">
           <div className="text-center mx-auto">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">Blog</h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300">Latest articles and updates</p>
+            <h1 className={`${textColors.primary} text-4xl font-bold mb-2`}>
+              Blog
+            </h1>
+            <p className={`${textColors.secondary} text-xl`}>
+              Latest articles and updates
+            </p>
           </div>
           <ThemeToggle className="absolute right-8 top-8" />
         </div>

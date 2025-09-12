@@ -1,3 +1,17 @@
+---
+title: "My First Blog Post"
+description: "This is my first blog post exploring the historical and archaeological evidence for Jesus Christ. Discover the fascinating findings that support the biblical narrative."
+author: "Tranquil Software"
+publishedDate: "2024-01-15"
+modifiedDate: "2024-01-20"
+readTime: "5 min read"
+category: "Historical Evidence"
+tags: ["Jesus Christ", "historical evidence", "archaeology", "biblical accuracy", "ancient manuscripts"]
+image: "/assets/blog/historical-evidence.jpg"
+featured: true
+draft: false
+---
+
 # My First Blog Post
 
 Welcome to my blog! This is a sample post demonstrating the Markdown renderer.

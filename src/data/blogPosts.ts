@@ -5,7 +5,7 @@ export interface BlogPost {
   readTime: string;
   date: string;
   image?: string;
-  slug: string;
+  slug: string; // this has to be the exact *.md file name
   category: string;
   tagline?: string;
 }
@@ -21,6 +21,24 @@ export const blogPosts: BlogPost[] = [
     slug: 'my-first-post',
     category: 'Technology',
     tagline: 'Exploring the future of technology'
+  },
+  {
+    id: '2',
+    title: 'Brief Overview of Archaeological Evidence',
+    excerpt: 'This is a sample blog post excerpt.',
+    readTime: '5 min read',
+    date: '2023-01-01',
+    slug: 'brief-overview-of-archaeological-evidence',
+    category: 'Historical Evidence',
+  },
+  {
+    id: '3',
+    title: 'Common Misconceptions of the Bible',
+    excerpt: 'Addressing common misconceptions about the Bible with overwhelming manuscript evidence and archaeological facts.',
+    readTime: '5 min read',
+    date: '2023-01-01',
+    slug: 'common-misconceptions-of-the-bible',
+    category: 'Historical Evidence',
   }
 ];
 
