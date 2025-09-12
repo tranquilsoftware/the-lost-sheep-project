@@ -1,3 +1,6 @@
+/// UTIL NUMBERS
+export const MOBILE_WIDTH_THRESHOLD = 1024;
+
 /// BRAND
 export const WEBSITE_TITLE = 'Evidence for Jesus Christ';
 export const BRAND_NAME = WEBSITE_TITLE;
@@ -11,6 +14,9 @@ export const FACEBOOK_LINK = "https://www.facebook.com/profile.php?id=JesusChris
 export const LINKEDIN_LINK = "https://www.linkedin.com/company/tranquil-software/";
 
 export const HREF_HOME_LINK = '/';
+export const HREF_ABOUT = '/about';
+export const HREF_BLOG = '/blog';
+export const HREF_CONTACT = '/contact';
 
 /// STYLING
 export const DARK_MODE_PREFERENCE_KEY = 'theme-preference';

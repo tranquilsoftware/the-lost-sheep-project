@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Clock } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import { BlogPost } from '../types';
+import { useNavigation } from '../../utils/navigationUtils';
+import { BlogPost } from '../../data/blogPosts';
 
 export function BlogPostCard({
   title,
@@ -12,15 +12,16 @@ export function BlogPostCard({
   slug,
   image,
 }: BlogPost) {
-  const navigate = useNavigate();
-  
+
+  const navigateUtil = useNavigation();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      onClick={() => navigate(`${slug}`)}
+      onClick={() => navigateUtil(`${slug}`, true)}
       className="card-gradient rounded-xl border border-border overflow-hidden hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 h-full flex flex-col cursor-pointer group"
     >
       {image && (

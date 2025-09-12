@@ -6,7 +6,7 @@ publishedDate: "2024-01-15"
 modifiedDate: "2024-01-20"
 readTime: "5 min read"
 category: "Historical Evidence"
-tags: ["TEST1", "Jesus Christ", "historical evidence", "archaeology", "biblical accuracy", "ancient manuscripts"]
+tags: ["Jesus Christ", "historical evidence", "archaeology", "biblical accuracy", "ancient manuscripts"]
 image: "/assets/blog/historical-evidence.jpg"
 featured: true
 draft: false

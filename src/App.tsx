@@ -6,6 +6,7 @@ import About from './components/About'
 // 3d grid.
 import { WEBSITE_TITLE } from './globals'
 import BlogCTA from './components/BlogCTA'
+import ScrollTextAnimation from './components/animations/MotionScrollTextAnimation/ScrollTextAnimation'
 
 function App() {
   // Render app (actually a home page -- see router.tsx)
@@ -43,6 +44,8 @@ function App() {
           <Header/>
 
           <Hero/>
+
+          <ScrollTextAnimation/>
 
           <div className="h-40"/>
           <About/>

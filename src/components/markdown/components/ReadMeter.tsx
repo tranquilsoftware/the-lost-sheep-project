@@ -1,5 +1,5 @@
 // markdown/components/ReadMeter.tsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { bgColors } from '../../../styles/colors';
 
@@ -21,8 +21,18 @@ const ReadMeter: React.FC<ReadMeterProps> = ({
   height = 8,
   color = bgColors.brighterinfo,
 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const { scrollYProgress } = useScroll({
-    target: scrollContainerRef || undefined,
+    target: scrollContainerRef || 0 || undefined,
   });
 
   const scaleX = useSpring(scrollYProgress, {
@@ -31,13 +41,29 @@ const ReadMeter: React.FC<ReadMeterProps> = ({
     restDelta: 0.001,
   });
 
+  if (!isVisible) {
+    return null;
+  }
+
   return (
-    <div className={`fixed top-0 left-0 right-0 z-50 ${className}`} style={{ height: `${height}px` }}>
+    // Make it vertically aniamted down
+    <motion.div 
+      className={`fixed top-0 left-0 right-0 z-50 ${className}`} 
+      style={{ height: `${height}px` }}
+      initial={{ y: -height, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ 
+        type: "spring", 
+        stiffness: 300, 
+        damping: 30,
+        duration: 2
+      }}
+    >
       <motion.div
         className={`h-full ${color} origin-left`}
         style={{ scaleX }}
       />
-    </div>
+    </motion.div>
   );
 };
 

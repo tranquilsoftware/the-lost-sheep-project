@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react'
 import { Button } from "./ui/Button"
 import { useLocation, useNavigate } from 'react-router-dom'
 import { HREF_HOME_LINK, BRAND_NAME, SMALL_LOGO } from '../globals'
+import { menuItems } from '../types/navItems'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,12 +17,6 @@ export default function Header() {
   const headerFontSize = isScrollingUp ? '1.5rem' : '1.25rem';
   const logoSize = isScrollingUp ? '2.5rem' : '2rem';
   const paddingY = isScrollingUp ? '1rem' : '0.75rem'; // Adjust padding for the height change
-
-  const menuItems = [
-    { name: 'Blog', href: '/blog' }, 
-    { name: 'FAQ', href: '#faq' },
-    { name: 'About', href: '/about' },
-  ]
 
   const isActive = (href: string) => {
     if (href.startsWith('#')) {
