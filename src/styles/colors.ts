@@ -2,7 +2,8 @@
 export const textColors = {
   primary: 'text-gray-700 dark:text-gray-300',
   secondary: 'text-gray-600 dark:text-gray-400',
-  accent: 'text-accent dark:text-accent-dark',
+  // accent: 'text-accent dark:text-accent-dark',
+  accent: 'text-blue-700 dark:text-blue-400',
   muted: 'text-gray-500 dark:text-gray-400',
   light: 'text-gray-100 dark:text-white',
   dark: 'text-gray-900 dark:text-white',

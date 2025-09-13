@@ -19,7 +19,16 @@ export default function CodeBlock() {
       const match = /language-(\w+)/.exec(className || '');
       const language = match ? match[1] : '';
       
-      return !inline ? ( 
+      // Force inline rendering when inline prop is true
+      if (inline) {
+        return (
+          <code className={cn('px-1 py-0.5 rounded text-sm inline', 'bg-gray-200 dark:bg-gray-700')} {...props}>
+            {children}
+          </code>
+        );
+      }
+
+      return ( 
         <div className={cn('my-4 rounded-lg overflow-hidden', bgColors.dark)}>
           {language && (
             <div className={cn('px-4 py-1 text-sm font-mono text-left text-center', bgColors.dark, textColors.light)}>
@@ -32,11 +41,7 @@ export default function CodeBlock() {
             </code>
           </pre>
         </div>
-      ) : (
-        <code className={cn('px-1.5 py-0.5 rounded text-sm', 'bg-gray-200 dark:bg-gray-700')} {...props}>
-          {children}
-        </code>
-      );
+      )
     },
     pre: ({ children, ...props }: React.HTMLAttributes<HTMLPreElement>) => (
       <div className="my-4">

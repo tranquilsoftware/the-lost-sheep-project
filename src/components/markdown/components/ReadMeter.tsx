@@ -32,7 +32,7 @@ const ReadMeter: React.FC<ReadMeterProps> = ({
   }, []);
 
   const { scrollYProgress } = useScroll({
-    target: scrollContainerRef || 0 || undefined,
+    target: scrollContainerRef,
   });
 
   const scaleX = useSpring(scrollYProgress, {

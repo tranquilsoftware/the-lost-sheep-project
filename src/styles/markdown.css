@@ -1,0 +1,14 @@
+/* Markdown styling with Tailwind @apply directives */
+
+.reactMarkDown h1,
+.reactMarkDown h2,
+.reactMarkDown h3,
+.reactMarkDown h4,
+.reactMarkDown h5,
+.reactMarkDown h6 {
+  @apply font-bold pt-4 text-blue-700 dark:text-blue-400 !important;
+}
+
+.reactMarkDown p {
+  @apply py-1;
+}

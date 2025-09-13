@@ -1,5 +1,6 @@
 /// UTIL NUMBERS
 export const MOBILE_WIDTH_THRESHOLD = 1024;
+export const MIN_PC_WIDTH = 1440;
 
 /// BRAND
 export const WEBSITE_TITLE = 'Evidence for Jesus Christ';

@@ -16,6 +16,11 @@ interface ParallaxProps {
   baseVelocity: number;
 }
 
+interface ScrollTextAnimationProps {
+  text: string;
+  scrollVelocity: number;
+}
+
 function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
@@ -57,11 +62,14 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   );
 }
 
-export default function ScrollTextAnimation() {
+export default function ScrollTextAnimation({ 
+  text, 
+  scrollVelocity 
+}: ScrollTextAnimationProps) 
+{
   return (
     <section>
-      <ParallaxText baseVelocity={-5}>For God loved the world so much</ParallaxText>
-      <ParallaxText baseVelocity={5}>That He gave His only begotten Son</ParallaxText>
+      <ParallaxText baseVelocity={-scrollVelocity}>{text}</ParallaxText>
     </section>
   );
 }

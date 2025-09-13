@@ -1,7 +1,7 @@
 import React from 'react';
 import { cn } from '../../styles/colors';
 import { Moon, Sun } from 'lucide-react';
-import { useTheme } from '../../context/ThemeContext';
+import { useTheme } from '../markdown/context/ThemeContext';
 
 const ThemeToggle: React.FC<{ className?: string }> = ({ className }) => {
   const { darkMode, toggleDarkMode } = useTheme();

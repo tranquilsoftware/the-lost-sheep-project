@@ -1,9 +1,10 @@
 import { useState, useMemo } from 'react';
 import { getAllBlogPosts, categories } from '../../data/blogPosts';
-import { WEBSITE_TITLE } from '../../globals';
+import { HREF_BLOG } from '../../globals';
 import ThemeToggle from '../../components/theme/ThemeToggle';
 import { BlogGrid } from '../../components/blog/BlogGrid';
 import { textColors } from '../../styles/colors';
+import { SEO } from '../../components/SEO';
 
 const BlogPage = () => {
   const allPosts = getAllBlogPosts();
@@ -21,8 +22,7 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
-      <title>Blog | {WEBSITE_TITLE}</title>
-      <meta name="description" content="Read our latest blog posts" />
+      <SEO title="Blog" description="Read our latest blog posts" path={HREF_BLOG} />
       
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-12">

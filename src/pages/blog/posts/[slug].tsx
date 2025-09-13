@@ -4,9 +4,9 @@ import { ArrowLeft } from 'lucide-react';
 import ThemeToggle from '../../../components/theme/ThemeToggle';
 import BlogPost from '../BlogPost';
 import { getBlogPostBySlug } from '../../../data/blogPosts';
-import { BRAND_NAME, GLOBAL_META_TAGS } from '../../../globals';
+import { BRAND_NAME, GLOBAL_META_TAGS, HREF_BLOG } from '../../../globals';
 import SEO from '../../../components/SEO';
-import { PostMetadata, extractFilename, parseMarkdownWithFrontmatter } from '../../../context/markdownParser';
+import { PostMetadata, extractFilename, parseMarkdownWithFrontmatter } from '../../../components/markdown/context/markdownParser';
 
 const BlogPostPage = () => {
 
@@ -30,7 +30,7 @@ const BlogPostPage = () => {
 
   useEffect(() => {
     if (!slug) {
-      navigate('/blog', { replace: true });
+      navigate(HREF_BLOG, { replace: true });
       return;
     }
 
@@ -195,7 +195,18 @@ const BlogPostPage = () => {
             )}
           </div>
         </header>
-        
+
+        {/* Featured Image */}
+        {seoImage && (
+          <div className="mb-8">
+            <img 
+              src={seoImage} 
+              alt={seoTitle}
+              className="w-full h-auto aspect-[4/3] object-cover mx-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-lg"
+            />
+          </div>
+        )}
+
         <article className="prose dark:prose-invert max-w-none">
           <BlogPost 
             // postPath={slug || ''} 

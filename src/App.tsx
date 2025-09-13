@@ -45,10 +45,21 @@ function App() {
 
           <Hero/>
 
-          <ScrollTextAnimation/>
+          <ScrollTextAnimation
+            text="For God so loved the world, that he gave his only begotten Son"
+            scrollVelocity={3}
+          />
+          
+          <ScrollTextAnimation
+            text="that whosoever believeth on Him should not perish, but have everlasting life."
+            scrollVelocity={-3}
+          />
+
 
           <div className="h-40"/>
           <About/>
+
+
 
           <div className="h-40"/>
           <BlogCTA/>

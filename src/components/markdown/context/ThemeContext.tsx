@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useCallback, useState, ReactNode } from 'react';
-import { DARK_MODE_PREFERENCE_KEY } from '../globals';
+import { DARK_MODE_PREFERENCE_KEY } from '../../../globals';
 
 type ThemeContextType = {
   darkMode: boolean;

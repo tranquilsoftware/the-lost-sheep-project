@@ -1,10 +1,10 @@
-import { Button } from "../components/ui/Button"
+// import { Button } from "../components/ui/Button"
 import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import { BRAND_NAME, BRAND_ELEVATOR_PITCH } from "../globals"
 
 export default function Hero() {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   
   return (
     // <section className="relative w-full pt-64 pb-24 overflow-hidden bg-transparent">
@@ -22,7 +22,7 @@ export default function Hero() {
       >
         <div className="mx-auto max-w-4xl text-center">
           <motion.h1 
-            className="mb-6 text-4xl font-bold md:text-6xl text-primary"
+            className="mb-6 text-4xl font-bold md:text-6xl content-primary"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}

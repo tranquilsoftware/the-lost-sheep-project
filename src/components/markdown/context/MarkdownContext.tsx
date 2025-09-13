@@ -1,4 +1,5 @@
 import React, { createContext, useContext, ReactNode, useEffect } from 'react';
+import { MIN_PC_WIDTH } from '../../../globals';
 
 type Alignment = 'left' | 'center' | 'right';
 
@@ -61,7 +62,7 @@ export const MarkdownProvider: React.FC<MarkdownProviderProps> = ({
 
   useEffect(() => {
     const handleResize = () => {
-      setHasEnoughSpaceForToc(window.innerWidth > 1440);
+      setHasEnoughSpaceForToc(window.innerWidth > MIN_PC_WIDTH);
     };
     window.addEventListener('resize', handleResize);
     handleResize();

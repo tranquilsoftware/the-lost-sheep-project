@@ -59,6 +59,16 @@ export const blogPosts: BlogPost[] = [
     // image: '/assets/blog/disciples-martyrdom.jpg',
     slug: 'disciples-died-for-truth',
     category: 'Apologetics',
+  },
+  {
+    id: '6',
+    title: 'The Alexamenos Graffito: Ancient Graffiti That Proves Jesus Was Crucified',
+    excerpt: 'Discover how this 2,000-year-old Roman graffiti provides powerful archaeological evidence for the crucifixion of Jesus and early Christian persecution.',
+    readTime: '6 min read',
+    date: '2024-01-18',
+    // image: '/assets/blog/alexamenos-graffito.jpg',
+    slug: 'alexamenos-graffito',
+    category: 'Apologetics',
   }
 ];
 
