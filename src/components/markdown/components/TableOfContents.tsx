@@ -1,8 +1,7 @@
 import React from 'react';
 import { useMarkdown } from '../context/MarkdownContext';
 import { textColors, cn } from '../../../styles/colors';
-
-const TABLE_OF_CONTENTS_HIGHLIGHT_HEADING_DELAY = 50;
+import { TABLE_OF_CONTENTS_HIGHLIGHT_HEADING_DELAY } from '../../../globals';
 
 const TableOfContents: React.FC = () => {
 
@@ -36,6 +35,7 @@ const TableOfContents: React.FC = () => {
 
         if (currentActiveId && currentActiveId !== activeId) {
           setActiveId(currentActiveId);
+          scrollTocToActiveItem(currentActiveId);
         }
       }, TABLE_OF_CONTENTS_HIGHLIGHT_HEADING_DELAY);
     };
@@ -65,6 +65,27 @@ const TableOfContents: React.FC = () => {
     }
   };
 
+  const scrollTocToActiveItem = (id: string) => {
+    const tocItem = document.querySelector(`[data-toc-id="${id}"]`);
+    const tocContainer = document.querySelector('.max-h-\\[calc\\(100vh-8rem\\)\\]');
+    
+    if (tocItem && tocContainer) {
+      const containerRect = tocContainer.getBoundingClientRect();
+      const itemRect = tocItem.getBoundingClientRect();
+      
+      // Check if the item is not visible in the container
+      if (itemRect.top < containerRect.top || itemRect.bottom > containerRect.bottom) {
+        // Calculate scroll position to center the item in the container
+        const scrollTop = tocContainer.scrollTop + (itemRect.top - containerRect.top) - (containerRect.height / 2) + (itemRect.height / 2);
+        
+        tocContainer.scrollTo({
+          top: scrollTop,
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
+
   return (
     <div className="sticky top-4 self-start flex-shrink-0 mr-8 hidden lg:block">
       <div className="overflow-hidden">
@@ -78,6 +99,7 @@ const TableOfContents: React.FC = () => {
             {headings.map((heading) => (
               <li
                 key={heading.id}
+                data-toc-id={heading.id}
                 className={cn(
                   'text-xs',
                   activeId === heading.id 

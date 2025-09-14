@@ -69,6 +69,16 @@ export const blogPosts: BlogPost[] = [
     // image: '/assets/blog/alexamenos-graffito.jpg',
     slug: 'alexamenos-graffito',
     category: 'Apologetics',
+  },
+  {
+    id: '7',
+    title: 'Big Bang Theory and God: Why Science Points to Divine Creation, Not Atheism',
+    excerpt: 'Examining the Big Bang theory and its implications for the existence of God.',
+    readTime: '8 min read',
+    date: '2024-01-19',
+    // image: '/assets/blog/big-bang-cosmos.jpg',
+    slug: 'big-bang-theory-god-atheism-evidence',
+    category: 'Philosophy & Science',
   }
 ];
 
