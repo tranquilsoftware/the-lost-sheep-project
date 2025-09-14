@@ -6,7 +6,8 @@
 .reactMarkDown h4,
 .reactMarkDown h5,
 .reactMarkDown h6 {
-  @apply font-bold pt-4 text-blue-700 dark:text-blue-400 !important;
+  @apply font-bold pt-4 text-blue-700 dark:text-blue-400;
+  font-weight: bold !important;
 }
 
 .reactMarkDown p {

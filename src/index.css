@@ -1,6 +1,8 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+@import "tailwindcss";
+@config "../tailwind.config.js";
 
 * {
   @apply transition-colors duration-200 /* this is for smooth theme transition from light-mode -> dark mode  TAILWINDCSS-light to dark:TAILWINDCSS-dark*/

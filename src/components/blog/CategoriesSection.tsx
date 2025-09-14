@@ -51,7 +51,7 @@ export function CategoriesSection({ categories, searchQuery, setSearchQuery }: C
             
             {/* Background gradient overlay */}
             <motion.div 
-              className="absolute inset-0 rounded-full bg-gradient-to-r from-primary-500/10 to-accent-500/10"
+              className="absolute inset-0 rounded-full bg-linear-to-r from-primary-500/10 to-accent-500/10"
               initial={{ opacity: 0 }}
               whileHover={{ opacity: searchQuery !== category ? 1 : 0 }}
               transition={{ duration: 0.3 }}

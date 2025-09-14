@@ -7,6 +7,7 @@ import { getBlogPostBySlug } from '../../../data/blogPosts';
 import { BRAND_NAME, GLOBAL_META_TAGS, HREF_BLOG } from '../../../globals';
 import SEO from '../../../components/SEO';
 import { PostMetadata, extractFilename, parseMarkdownWithFrontmatter } from '../../../components/markdown/context/markdownParser';
+import Footer from '../../../components/Footer';
 
 const BlogPostPage = () => {
 
@@ -202,7 +203,7 @@ const BlogPostPage = () => {
             <img 
               src={seoImage} 
               alt={seoTitle}
-              className="w-full h-auto aspect-[4/3] object-cover mx-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-lg"
+              className="w-full h-auto aspect-4/3 object-cover mx-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-lg"
             />
           </div>
         )}
@@ -216,6 +217,8 @@ const BlogPostPage = () => {
           />
         </article>
       </main>
+
+      <Footer/>
     </div>
   );
 };

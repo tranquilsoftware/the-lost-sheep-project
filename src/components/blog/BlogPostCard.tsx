@@ -24,23 +24,23 @@ export function BlogPostCard({
       className="group relative overflow-hidden rounded-2xl bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:shadow-blue-500/10 dark:hover:shadow-blue-400/5 transition-all duration-500 h-full flex flex-col cursor-pointer transform hover:-translate-y-1"
     >
       {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent dark:from-blue-950/20 dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-linear-to-br from-blue-50/50 to-transparent dark:from-blue-950/20 dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       
       {image && (
-        <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-blue-100 to-blue-50 dark:from-slate-800 dark:to-slate-700">
+        <div className="relative aspect-video overflow-hidden bg-linear-to-br from-blue-100 to-blue-50 dark:from-slate-800 dark:to-slate-700">
           <img
             src={image}
             alt={title}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
           {/* Image overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/10 to-transparent" />
         </div>
       )}
       
-      <div className="relative p-6 flex-grow flex flex-col">
+      <div className="relative p-6 grow flex flex-col">
         {/* Meta information */}
-        <div className="flex items-center justify-between text-sm mb-4 flex-shrink-0">
+        <div className="flex items-center justify-between text-sm mb-4 shrink-0">
           <div className="flex items-center text-slate-600 dark:text-slate-400">
             <span className="font-medium">{date}</span>
             <span className="mx-2 text-slate-400">•</span>
@@ -55,7 +55,7 @@ export function BlogPostCard({
         </div>
         
         {/* Content container - this will center the title and excerpt */}
-        <div className="flex-grow flex flex-col justify-center">
+        <div className="grow flex flex-col justify-center">
           {/* Title */}
           <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 leading-tight line-clamp-2">
             {title}
@@ -68,7 +68,7 @@ export function BlogPostCard({
         </div>
         
         {/* Read more indicator */}
-        <div className="flex items-center text-blue-600 dark:text-blue-400 text-sm font-medium group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors flex-shrink-0 mt-4">
+        <div className="flex items-center text-blue-600 dark:text-blue-400 text-sm font-medium group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors shrink-0 mt-4">
           <span>Read more</span>
           <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

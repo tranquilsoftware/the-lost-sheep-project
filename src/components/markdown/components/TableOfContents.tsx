@@ -87,7 +87,7 @@ const TableOfContents: React.FC = () => {
   };
 
   return (
-    <div className="sticky top-4 self-start flex-shrink-0 mr-8 hidden lg:block">
+    <div className="sticky top-4 self-start shrink-0 mr-8 hidden lg:block">
       <div className="overflow-hidden">
         <div className="px-4 py-2">
           <h2 className={cn('text-md font-medium font-bold', textColors.dark)}>

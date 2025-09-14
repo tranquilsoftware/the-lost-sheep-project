@@ -146,7 +146,7 @@ export const LinkedImageModal = ({ images, initialIndex, onClose }: LinkedImageM
           className="w-full h-full flex flex-col items-center justify-center"
           style={{ willChange: 'transform, opacity' }}
         >
-          <div className="flex-[0_auto] flex items-center justify-center w-full">
+          <div className="flex-initial flex items-center justify-center w-full">
             <img
               src={images[currentIndex]?.src || ''}
               alt={images[currentIndex]?.alt || 'Image'}

@@ -41,13 +41,13 @@ export default function BlogCTA() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               {/* Temporarily commented out as per request
               <button 
-                className="group relative px-8 py-4 bg-gradient-to-r from-primary to-cyan-500 text-white font-medium rounded-lg 
+                className="group relative px-8 py-4 bg-linear-to-r from-primary to-cyan-500 text-white font-medium rounded-lg 
                           overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   <Mail className="w-5 h-5" /> Subscribe to Newsletter
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-linear-to-r from-cyan-500 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
               */}
               
@@ -58,14 +58,14 @@ export default function BlogCTA() {
               > */}
 
               <button 
-                className="group relative px-8 py-4 bg-gradient-to-r from-primary to-cyan-500 text-white font-medium rounded-lg 
+                className="group relative px-8 py-4 bg-linear-to-r from-primary to-cyan-500 text-white font-medium rounded-lg 
                           overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
                 onClick={() => window.location.href = '/blog'}
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   <BookOpen className="w-5 h-5" /> Read Our Blog
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-linear-to-r from-cyan-500 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
             </div>
             

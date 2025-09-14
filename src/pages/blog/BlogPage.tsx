@@ -5,6 +5,8 @@ import ThemeToggle from '../../components/theme/ThemeToggle';
 import { BlogGrid } from '../../components/blog/BlogGrid';
 import { textColors } from '../../styles/colors';
 import { SEO } from '../../components/SEO';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
 const BlogPage = () => {
   const allPosts = getAllBlogPosts();
@@ -23,7 +25,7 @@ const BlogPage = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <SEO title="Blog" description="Read our latest blog posts" path={HREF_BLOG} />
-      
+      <Header />
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-12">
           <div className="text-center mx-auto">
@@ -43,6 +45,8 @@ const BlogPage = () => {
           setSearchQuery={setSearchQuery}
           filteredPosts={filteredPosts}
         />
+
+        <Footer />
       </div>
     </div>
   );

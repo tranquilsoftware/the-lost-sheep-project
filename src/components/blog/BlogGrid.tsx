@@ -37,7 +37,7 @@ export function BlogGrid({
             placeholder="Search articles..."
             className="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl pl-12 pr-4 py-4 text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-400 dark:focus:border-primary-500 transition-all duration-300 shadow-sm hover:shadow-md focus:shadow-lg"
           />
-          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primary-500/5 to-accent-500/5 opacity-0 group-focus-within:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          <div className="absolute inset-0 rounded-xl bg-linear-to-r from-primary-500/5 to-accent-500/5 opacity-0 group-focus-within:opacity-100 transition-opacity duration-300 pointer-events-none" />
         </div>
       </div>
 
@@ -49,7 +49,7 @@ export function BlogGrid({
               <BookOpen className="w-7 h-7 mr-3 text-primary-500" />
               <div className="absolute inset-0 w-7 h-7 mr-3 text-primary-500 animate-pulse-soft opacity-50" />
             </div>
-            <span className="bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
               {searchQuery ? 'Search Results' : 'Latest Articles'}
             </span>
           </h2>

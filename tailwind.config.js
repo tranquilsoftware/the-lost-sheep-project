@@ -30,7 +30,7 @@ module.exports = {
       colors: {
         // Primary backgrounds
         background: {
-          DEFAULT: "#ffffff",           // Pure white for light mode
+          DEFAULT: "#000000",           // Pure white for light mode
           dark: "#0f172a",             // Deep slate for dark mode
           light: "#f8fafc",            // Very light gray-blue
           secondary: "#f1f5f9",        // Light blue-gray

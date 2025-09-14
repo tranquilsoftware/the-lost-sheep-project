@@ -275,7 +275,7 @@ export const ImageGallery = ({
           {images.map((image, index) => (
             <div
               key={index}
-              className="flex-shrink-0 overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+              className="shrink-0 overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
               onClick={() => openModal(index)}
               style={{
                 scrollSnapAlign: 'start',

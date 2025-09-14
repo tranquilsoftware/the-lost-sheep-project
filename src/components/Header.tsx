@@ -138,7 +138,7 @@ export default function Header() {
                 className={`text-gray-300 hover:text-white transition-colors relative py-2
                   ${isActive(item.href) ? 'text-white' : ''}
                   after:content-[''] after:absolute after:bottom-0 after:left-0 
-                  after:w-full after:h-0.5 after:bg-gradient-to-r 
+                  after:w-full after:h-0.5 after:bg-linear-to-r 
                   after:from-primary after:to-accent
                   after:scale-x-0 after:origin-left after:transition-transform
                   ${isActive(item.href) ? 'after:scale-x-100' : 'hover:after:scale-x-100'}
