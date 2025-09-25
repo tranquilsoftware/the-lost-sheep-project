@@ -79,6 +79,16 @@ export const blogPosts: BlogPost[] = [
     // image: '/assets/blog/big-bang-cosmos.jpg',
     slug: 'big-bang-theory-god-atheism-evidence',
     category: 'Philosophy & Science',
+  },
+  {
+    id: '8',
+    title: 'Rave Culture and New Age Spirituality: Why Christ Offers the Lasting Peace You\'re Seeking',
+    excerpt: 'Explore why rave culture and New Age spirituality fail to provide lasting peace compared to the enduring comfort found in Jesus Christ. Discover the true solution to spiritual seeking.',
+    readTime: '12 min read',
+    date: '2024-09-25',
+    slug: 'rave-culture-new-age-christian',
+    category: 'Apologetics',
+    tagline: 'Finding authentic spiritual fulfillment beyond temporary experiences'
   }
 ];
 

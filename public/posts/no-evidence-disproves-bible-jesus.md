@@ -7,7 +7,7 @@ modifiedDate: "2024-01-16"
 readTime: "10 min read"
 category: "Apologetics"
 tags: ["Bible", "Jesus", "Evidence", "Archaeology", "Apologetics", "Historical Accuracy", "Manuscript Evidence", "Dead Sea Scrolls", "Biblical Archaeology", "Christian Apologetics", "Biblical Prophecy", "Scientific Accuracy", "Ancient History", "Pontius Pilate", "Caiaphas", "Resurrection Evidence", "Messianic Prophecies", "Fulfilled Prophecies", "Biblical Inerrancy"]
-image: "/assets/blog/bible-evidence.jpg"
+image: "/assets/blog/archaeological.jpg"
 featured: true
 draft: false
 ---

@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Mail as EmailIcon, MapPin } from 'lucide-react';
+import { Instagram, Youtube, Mail as EmailIcon } from 'lucide-react';
 import { menuItems } from '../types/navItems'
 import { 
   // BRIEF_DESCRIPTION, 

@@ -7,7 +7,7 @@ import ScrollTextAnimation from './components/animations/MotionScrollTextAnimati
 import Footer from './components/Footer'
 import { Matthew1914Quote } from './components/ui/BiblicalQuote';
 import SEO from './components/SEO'
-import ScrollRevealAnimations from './components/animations/ScrollRevealAnimations';
+// import ScrollRevealAnimations from './components/animations/ScrollRevealAnimations';
 
 function App() {
   // Render app (actually a home page -- see router.tsx)
