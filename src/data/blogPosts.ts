@@ -89,6 +89,16 @@ export const blogPosts: BlogPost[] = [
     slug: 'rave-culture-new-age-christian',
     category: 'Apologetics',
     tagline: 'Finding authentic spiritual fulfillment beyond temporary experiences'
+  },
+  {
+    id: '9',
+    title: 'The Five Ways of St. Thomas Aquinas: A Philosophical Defense of God',
+    excerpt: 'Exploring the Five Ways of St. Thomas Aquinas, a classic philosophical argument for the existence of God based on the nature of reality.',
+    readTime: '10 min read',
+    date: '2024-09-25',
+    slug: 'thomas-aquinas-five-ways-nature-of-god',
+    category: 'Apologetics',
+    tagline: 'Discovering the rational foundations of faith through the via negativa'
   }
 ];
 
